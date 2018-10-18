@@ -1,0 +1,18 @@
+df_upsampled=df.resample('D').mean()
+print(df_upsampled)
+
+df_upsampled.to_csv('sales-of-shampoo-over-a-three-year-upsampledData.csv')
+print("##"*100)
+#df.close()
+
+linear_interpolated = df_upsampled.interpolate(method='linear')
+
+g=plt.figure(2)
+plt.plot(linear_interpolated)
+plt.title('plot for linear interpolated upsampled data')
+plt.xlabel('years')
+plt.ylabel('shampoo sales')
+
+
+linear_interpolated.to_csv('sales-of-shampoo-over-a-three-year-Linear-interpolatedData.csv'
+plt.show()
