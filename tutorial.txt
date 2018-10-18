@@ -14,4 +14,3 @@ plt.xlabel('years')
 plt.ylabel('shampoo sales')
 
 
-linear_interpolated.to_csv('sales-of-shampoo-over-a-three-year-Linear-interpolatedData.csv'
